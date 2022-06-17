@@ -1,0 +1,21 @@
+@mixin redes {
+  text-align: center;
+  display: grid;
+  grid-column: auto;
+  place-items: center;
+  place-content: center;
+}
+
+@mixin redesA {
+    display: inline-block;
+    margin: auto;
+    color: map-get($map: $paletaCLR, $key: negro );
+    background-color: map-get($map: $paletaCLR, $key: blanco );
+    border-radius: 20%;
+    font-size: 1.8rem;
+}
+
+@mixin tamaño {
+  width: 50rem;
+  height: 50rem;
+}
