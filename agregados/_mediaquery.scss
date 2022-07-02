@@ -1,0 +1,70 @@
+@media screen and (max-width: 620px) {
+  /* media CATALOGO */
+
+  #cata {
+    font-size: 75px;
+    width: 100%;
+    height: 10.6em;
+  }
+
+  main section {
+    padding: 0px;
+  }
+
+  .secciones div img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  /* media TRABAJOS */
+
+  #titulo {
+    font-size: 75px;
+    height: 10.6em;
+  }
+
+  .contenedor__imagenes img {
+    height: 20rem;
+    width: 20rem;
+  }
+
+  .carousel-item img {
+    height: 25rem;
+    width: 25rem;
+  }
+
+  .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+
+  .carousel-control-prev-icon {
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  /* media ENVIOS */
+
+  .cabeza__envios{
+    h1{
+      font-size: 80px;
+      height: 10.6em;
+    }
+  }
+  
+  .div__contenedor {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* media CONTACTO */
+
+  .cabecera__contacto h1 {
+    font-size: 70px;
+    height: 10.6em;
+  }
+
+  .main__contacto form {
+    width: 20rem;
+  }
+}

@@ -1,0 +1,40 @@
+.cabeza__envios {
+    background-image: url(../assets/envios.jpg);
+    width: 100%;
+    height: 55em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &::before {
+      @include before;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 9.6em;
+      font-size: 100px;
+      color: map-get($map: $paletaCLR, $key: cata);
+      text-shadow: 2px 5px 5px black;
+      font-weight: bold;
+    }
+  }
+  
+  .mainenvios {
+    width: 100%;
+    margin: auto;
+    img {
+      width: 15em;
+      height: 15em;
+    }
+    p {
+      width: 80%;
+      margin: auto;
+      margin-bottom: 20px;
+    }
+    .div__contenedor{
+        width: 100%;
+        margin: 0;
+    }
+  }

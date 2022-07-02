@@ -1,0 +1,42 @@
+.cabeza {
+    background-image: url(../assets/trabajos.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &::before {
+      @include before;
+    }
+  }
+  
+  #titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9.6em;
+    font-size: 100px;
+    color: map-get($map: $paletaCLR, $key: cata);
+    text-shadow: 2px 5px 5px black;
+    font-weight: bold;
+  }
+  .carousel {
+    background-image: url(../assets/fondo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .carousel-item img {
+    @include tamaño;
+    margin: auto;
+  }
+  
+  .carousel-control-next-icon {
+    @extend .carousel-control-prev-icon;
+  }
+  
+  .carousel-control-prev-icon {
+    @include tamaño;
+  }

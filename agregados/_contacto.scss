@@ -1,0 +1,71 @@
+.cabecera__contacto {
+    background-image: url(../assets/contacto.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55em;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &::before {
+      @include before;
+    }
+    h1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 9.6em;
+      font-size: 100px;
+      color: map-get($map: $paletaCLR, $key: cata);
+      text-shadow: 2px 5px 5px black;
+      font-weight: bold;
+    }
+  }
+  
+  .main__contacto {
+    padding: 15px 0;
+    background-color: map-get($map: $paletaCLR, $key: negro);
+    h2 {
+      text-align: center;
+      padding: 0 0 15px;
+      color: map-get($map: $paletaCLR, $key: cata);
+      margin: 0;
+      font-size: 30px;
+      margin-bottom: 20px;
+    }
+  }
+  
+  form {
+    width: 450px;
+    margin: auto;
+    background-color: rgba(80, 80, 80, 0.8);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 17px;
+    border: none;
+  }
+  
+  textarea {
+    min-height: 100px;
+    max-height: 200px;
+    min-width: 100%;
+    max-width: 100%;
+  }
+  
+  #boton {
+    padding: 20px;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  
+  #boton:hover {
+    background-color: rgb(192, 215, 192);
+  }

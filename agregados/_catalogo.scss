@@ -1,0 +1,49 @@
+.inicio {
+    background-image: url(../assets/imagencatalogo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 55em;
+    &::before {
+      @include before;
+    }
+  }
+  
+  #cata {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 9.6em;
+    font-size: 100px;
+    color: map-get($map: $paletaCLR, $key: cata);
+    text-shadow: 2px 5px 5px black;
+    font-weight: bold;
+  }
+  
+  .secciones {
+    background-color: rgb(83, 83, 83);
+    h1 {
+      font-size: 40px;
+      text-align: center;
+      padding: 30px 5px;
+      background-color: map-get($map: $paletaCLR, $key: azu);
+    }
+    h2 {
+      color: map-get($map: $paletaCLR, $key: blanco);
+      padding: 20px 5px;
+      text-align: center;
+    }
+  
+    div img {
+      display: flex;
+      height: auto;
+      width: 30rem;
+      height: 30rem;
+      margin: auto;
+      padding: 20px;
+    }
+  }
+

@@ -13,9 +13,21 @@
     background-color: map-get($map: $paletaCLR, $key: blanco );
     border-radius: 20%;
     font-size: 1.8rem;
+    border-bottom: 5px solid #5c7e97;
 }
 
 @mixin tamaño {
   width: 50rem;
   height: 50rem;
+}
+
+@mixin before {
+  content: "";
+  width: 100%;
+  min-height: 55em;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  opacity: 0.3;
 }
